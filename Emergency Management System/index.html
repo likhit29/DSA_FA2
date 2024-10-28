@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Room Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🏥 Emergency Room <br>Management</h2>
+
+    <div class="allinputs">
+        
+        <div class="text-inputs">
+
+            <div class="Input-box">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName">
+            </div>
+            
+            <div class="Input-box">
+                <label for="criticalLevel">Critical Level (1-10)*:</label>
+                <input type="number" id="criticalLevel" min="1" max="10">
+            </div>
+            
+        </div>
+        
+        <div class="input-buts">
+            
+            <button onclick="addPatient()" class="buts">Add Patient</button>
+            <button onclick="treatPatient()" class="buts">Treat Next Patient</button>
+            <button onclick="listPatients()" class="buts">List Patients</button>
+            
+        </div>
+        <div class="output-section">
+
+            <div class="output" id="output">
+                <p id = "nezt"></p>
+            </div>
+
+        </div>
+        
+    </div>
+    <h5>*Patients having critical level above 7 will be treated Emergency Patients</h5>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

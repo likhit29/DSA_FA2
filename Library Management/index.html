@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="library-container">
+    <h1>📚 Library Management System</h1>
+
+    <div class="section">
+      <h2>Add Member to Queue</h2>
+      <input type="text" id="memberInput" placeholder="Enter member name" class="input-box">
+      <button onclick="addMember()" class="btn primary-btn">Add Member</button>
+      <h3>Members in Queue:</h3>
+      <ul id="memberQueueList" class="list"></ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+      <h2>Borrow a Book</h2>
+      <input type="text" id="bookInput" placeholder="Enter book name" class="input-box">
+      <button onclick="borrowBook()" class="btn primary-btn">Borrow Book</button>
+      <h3>Borrowed Books:</h3>
+      <ul id="borrowedBooksList" class="list"></ul>
+    </div>
+
+    <hr>
+
+
+    <div class="section">
+      <h2>Return Last Borrowed Book</h2>
+      <button onclick="returnBook()" class="btn secondary-btn">Return Book</button>
+    </div>
+  </div>
+
+     
+  <script src="script.js"></script>
+</body>
+</html>

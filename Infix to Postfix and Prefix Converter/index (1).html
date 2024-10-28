@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Converter </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="heading">Expression Converter </h1>
+        
+        <div class="inputs">
+            <label for="expression">Enter Expression:</label>
+            <input type="text" id="expression" placeholder="A+B*C-D/E" />
+        </div>
+
+        <div class="buts">
+
+            <button onclick="evaluateExpression()">Convert to Postfix</button>
+            <button onclick="evaluateExpression2()">Convert to Prefix</button>
+            <button onclick="evaluateExpression3()">Evaluate</button>
+            <!-- <button onclick="evaluateExpression4()">Evaulate to Postfix and the return to Infix</button> -->
+            <!-- <button onclick="evaluateExpression5()">Evaluate to Prefix and evauluate and return to Infix</button> -->
+            <!-- <button onclick="evaluateExpressio3()">Convert to Infix</button> -->
+
+        </div>
+        
+        <div class="output" id="output"></div>
+    </div>
+        
+        <script src="stack.js"></script>
+        <script src="calculator.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
